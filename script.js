@@ -14,15 +14,15 @@ Log each variable to the console.
 const firstName = "David";
 const lastName = "Billups";
 const age = 28;
-const likesTravel = true;
+const likesToTravel = true;
 
 // Printing to the console
 console.log(firstName);
 console.log(lastName);
 console.log(age);
-console.log(likesTravel);
+console.log(likesToTravel);
       
-console.log(`My name is ${firstName} ${lastName}. I am ${age} years old and it is ${likesTravel} that I like to travel.`);
+console.log(`My name is ${firstName} ${lastName}. I am ${age} years old and it is ${likesToTravel} that I like to travel.`);
 
 /* Dec 8, 2020 - Foundations 2
 Favorite Movies
@@ -153,3 +153,29 @@ for (let i=0; i<weatherForecast.length; i++) {
 }
 
 console.log(`The high on ${weatherForecast[2].day} will be ${weatherForecast[2].temperature.high} F and the low will be ${weatherForecast[2].temperature.low} F. We're predicting a ${weatherForecast[2].conditions}. The sun will rise at ${weatherForecast[2].astronomy.sunrise} and set at ${weatherForecast[2].astronomy.sunset}.`)
+
+/* Lightning exercise
+Bon Voyage!
+In your JavaScript file, declare a new variable called likesToTravel and set it equal to true or false.
+If likesToTravel is true, log "Bon voyage!" to the console. If not, log "Enjoy your couch!" to the console.
+*/
+if (likesToTravel) {
+    console.log("Bon voyage!");
+} else {
+    console.log("Enjoy your couch!");
+};
+
+/* Lightning Exercise
+Fried Pickles are the Best
+In your JavaScript file, declare a new variable called favoriteFood and set it equal to your favorite food.
+Write a conditional that checks to see if the favoriteFood variable is equal to "fried pickles" OR "pepperoni rolls". If so, log "Congratulations! You have excellent taste!" to the console. Otherwise, log "Clearly you have not tried fried pickles or pepperoni rolls." to the console.
+*/
+const favoriteFood = "Tacos";
+if (favoriteFood === "fried pickles" || favoriteFood === "pepperoni rolls") {
+    console.log("Congratulations! You have excellent taste!");
+} else {
+    console.log("Clearly you have not tried fried pickles or pepperoni rolls.")
+}
+
+const myFaveFood = "fried pickles";
+(myFaveFood === "fried pickles" || myFaveFood === "pepperoni rolls") ? console.log("Congratulations! You have excellent taste!") : console.log("Clearly you have not tried fried pickles or pepperoni rolls.")
