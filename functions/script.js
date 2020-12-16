@@ -270,3 +270,39 @@ let mySum = addThemUp(outsideArray)
 // Log mySum to the console.
 console.log(mySum)
 // Try changing the numbers in the array or adding new numbers.
+
+// 9. Law of Averages
+// Copy and paste the following code into your JavaScript file:
+
+let scoresToAverage =  [22, 34, 62, 11, 90, 88, 70, 65, 22, 89, 85, 39, 71, 92, 98, 84];
+// In your JavaScript file, define a function named findAverage.
+// The function should accept one argument: an array of numbers.
+function findAverage (numArray) {
+// Inside the function, loop over the array of numbers parameter and find their average.
+    let avg = addThemUp(numArray)/numArray.length;
+// The findAverage function should return the average of all the numbers.
+    return avg
+};
+// Call findAverage and pass in scoresToAverage as an argument.
+// Save the returned value in a variable called myAverage.
+let myAverage = findAverage(scoresToAverage)
+// Log myAverage to the console.
+console.log(myAverage)
+// Try adding new numbers to the outsideArray. Your function should still return the correct average no matter how many items are in the array.
+
+// 10. Shipping Calculator
+// You work for an online clothing retailer. Every time an order ships, your company needs to calculate the cost of shipping so they can charge the customer correctly. Because they need to make this calculation so many times and in so many places, they've asked you to write a function that calculates shipping cost based on package weight, distance to destination, and whether or not the package is oversized.
+// Write a function that accepts whatever information you need to calculate the cost of shipping and returns the cost as an integer.
+function calcShipping (weight, distance, oversized) {
+// The cost of shipping is always the weight of the package multiplied by the distance it needs to travel, divided by 100.
+    let cost = weight*distance/100;
+// If the package is oversized, it adds ten dollars to the cost of shipping.
+    if (oversized) {
+        cost += 10;
+    }
+    cost = "$" + Math.round(cost);
+    return cost
+}
+// Execute the function and output the result to the console.
+console.log(calcShipping(11.5,30,true))
+
